@@ -1,0 +1,27 @@
+import java.util.*; 
+public class HelloWorld{
+    
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+	Scanner obj = new Scanner(System.in);
+	System.out.println("Enter amount:");
+	int amount = obj.nextInt();
+	System.out.println("Enter price:");
+	int price= obj.nextInt();
+	System.out.println("Enter no of items:");
+	int no_item = obj.nextInt();
+	int noi = amount / price;
+	int item_ret = 0;
+	
+	while (noi >=10)
+	{
+		item_ret= item_ret + 1;
+		noi = noi-10;
+	}
+	
+	System.out.println(item_ret + no_item);
+	
+}
+}
