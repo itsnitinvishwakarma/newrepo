@@ -1,0 +1,20 @@
+import java.util.*; 
+import java.lang.*;
+
+ enum days {sunday(1),monday(2),tuesday(3),wednesday(4),thursday(5),friday(6),saturday(7)
+ }
+   
+public class HelloWorld{
+     
+     public static void main(String []args){
+     
+     Scanner obj = new Scanner(System.in);
+     System.out.println("enter day:");
+     string s = obj.nextLine();
+     int n = 0;
+     int n = (days.valueOf(s) + 5) % 7; //this is logic, i am assuming ,it is giving value which is add by 5 and if is greater than 7 ,its again start from sunday.  
+     
+     System.out.println("day on which medicine should be taken:" +days.valueOf(n));  // showing name of the day 
+     
+}
+}
